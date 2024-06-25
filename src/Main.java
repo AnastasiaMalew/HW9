@@ -15,22 +15,20 @@ public class Main {
         int[ ] payTwo = array;
         int maxPay = payTwo[0];
         for(int i = 0; i < payTwo.length; i++) {
-            if (payTwo[i] > maxPay);
-            {
+            if (payTwo[i] > maxPay) {
                 maxPay = payTwo[i];
             }
         }
         int minPay = payTwo[0];
-        for(int i = 0; i > payTwo.length; i++) {
-            if (minPay > payTwo[i]);
-            {
+        for(int i = 0; i < payTwo.length; i++) {
+            if (minPay > payTwo[i]) {
                 minPay = payTwo[i];
             }
         }
         System.out.println("Минимальная сумма трат за неделю составила " + minPay + " рублей. Максимальная сумма трат за неделю составила " + maxPay + " рублей");
 
     System.out.println("Задание 3");
-    float middlePay = sum / 5;
+    float middlePay = sum / (float) array.length;
     System.out.println("Средняя сумма трат за месяц составила " + middlePay + " рублей");
 
     System.out.println("Задание 4");
